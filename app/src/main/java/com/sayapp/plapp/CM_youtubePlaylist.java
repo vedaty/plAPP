@@ -27,9 +27,6 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by christophercoffee on 12/17/16.
- */
 
 public class CM_youtubePlaylist extends Fragment {
 
@@ -62,10 +59,11 @@ public class CM_youtubePlaylist extends Fragment {
 
         //show a long toast so user knows this screen is blank intentionally...
         //showToast("This screen is blank intentionally. See CM_anWatchList.java to see how little is required to launch a simple plugin.", "long");
-        playlist_id = "PLivjPDlt6ApRq22sn082ZCC9893XtV8xc";
+        // playlist_id = "PLivjPDlt6ApRq22sn082ZCC9893XtV8xc";
+        playlist_id = "PLX_eOt67RhzeHlRlqmQ6wNjR_NVABlfxy";
         int videoTxtColor = Color.parseColor("#000000");
-        loadTitle = "Loading...";
-        loadMsg = "Loading your videos...";
+        loadTitle = "Yükleniyor...";
+        loadMsg = "Videolar Yükleniyor...";
         browserKey = "AIzaSyALwiXIW-QhvZmSDKutUb3wrUVP54Hw-eI";
         int cornerRadius = 5;
         int cardColor = Color.parseColor("#FFFFFF");

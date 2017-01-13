@@ -9,8 +9,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:icon="@mipmap/m3_launcher"
+        android:logo="@mipmap/m3_launcher"
+        android:label="Çocuk Şarkıları"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
@@ -21,7 +22,7 @@
 
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name">
+            android:label="Çocuk Şarkıları">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -4,8 +4,10 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     // Remove the below line after defining your own ad unit ID.
@@ -33,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
 
         // Toasts the test ad message on the screen. Remove this after defining your own ad unit ID.
         // Toast.makeText(this, TOAST_TEXT, Toast.LENGTH_LONG).show();
+
+        Toast.makeText(this, "Çocuk Şarkıları Uygulamasına Hoşgeldiniz...", Toast.LENGTH_LONG).show();
     }
 
 
@@ -51,6 +55,12 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == R.id.action_settings) {
+            // shows the about message
+            Toast toast=Toast.makeText(this, "Bu uygulama çocukların başka videoları açmasına engel olacak seçilde, sadece seçilmiş çocuk şarkılarını dinleyebilmeleri için ücretsiz olarak hizmete sunulmuştur.",Toast.LENGTH_LONG);
+            toast.setGravity(Gravity.TOP|Gravity.CENTER_HORIZONTAL, 0, 300);
+            toast.setDuration(Toast.LENGTH_LONG);
+            toast.show();
+            // Toast.makeText(this, "Bu uygulama çocukların başka videoları açmasına engel olacak seçilde, sadece seçilmiş çocuk şarkılarını dinleyebilmeleri için ücretsiz olarak hizmete sunulmuştur.", Toast.LENGTH_LONG).show();
             return true;
         }
 
